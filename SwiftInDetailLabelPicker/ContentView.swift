@@ -10,7 +10,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        VStack {
+            Text("Picker")
+                .font(.headline)
+            Picker(selection: .constant(1), label: Text("Picker")) {
+                Text("1").tag(1)
+                Text("1").tag(2)
+            }
+        }.padding()
     }
 }
 

@@ -15,8 +15,8 @@ struct ContentView: View {
                 .font(.headline)
             Picker(selection: .constant(1), label: Text("Picker")) {
                 Text("1").tag(1)
-                Text("1").tag(2)
-            }
+                Text("2").tag(2)
+            }.labelsHidden()
         }.padding()
     }
 }
